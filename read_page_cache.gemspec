@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{read_page_cache}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roy Wright"]
-  s.date = %q{2009-04-20}
+  s.date = %q{2009-04-21}
   s.email = %q{roy@wright.org}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -17,8 +17,6 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION.yml",
-    "lib/file_extensions.rb",
-    "lib/module_extensions.rb",
     "lib/read_page_cache.rb",
     "spec/read_page_cache_spec.rb",
     "spec/spec_helper.rb"
@@ -39,8 +37,11 @@ Gem::Specification.new do |s|
     s.specification_version = 2
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<royw-roys_extensions>, [">= 0.0.2"])
     else
+      s.add_dependency(%q<royw-roys_extensions>, [">= 0.0.2"])
     end
   else
+    s.add_dependency(%q<royw-roys_extensions>, [">= 0.0.2"])
   end
 end
