@@ -11,6 +11,7 @@ begin
     gem.authors = ["Roy Wright"]
 
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency('royw-roys_extensions','>= 0.0.2')
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

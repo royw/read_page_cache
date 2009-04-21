@@ -1,5 +1,5 @@
-require 'module_extensions'
-require 'file_extensions'
+# royw gems on github
+require 'roys_extensions'
 
 # == Synopsis
 # The purpose of the module is to cache web pages used for
